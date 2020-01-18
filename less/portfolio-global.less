@@ -1,0 +1,374 @@
+	/* Basic */
+
+	html {
+	box-sizing: border-box;
+	}
+
+	body, input, textarea, select {
+	line-height: 1.85em;
+	color: @darkerblue;
+	}
+
+
+  // <-----LINKS----
+	a {
+	color: @coralred;
+	text-decoration: none;
+	}
+
+	a:hover {
+	color: @darkerblue;
+	}
+
+  // <-------TEXT--------
+	
+	h1 {
+	font-size: 3em;
+	letter-spacing: -0.025em;
+	font-weight: 300;
+	color: @darkerblue;
+	font-family: 'Homemade Apple', cursive;
+	}
+
+	h2 {
+	font-size: 2em;
+	letter-spacing: -0.015em;
+	color: @darkblue;
+	font-family: 'Homemade Apple', cursive;
+	}
+
+	h3 {
+	font-size: 1.5em;
+	letter-spacing: -0.015em;
+	}
+	
+	h3, h4, h5, h6 {
+	font-family: 'Homemade Apple', cursive;
+	color: @coralred;
+	margin: 0 0 0.75em 0;
+	font-weight: 400;
+	}
+
+	p {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: @darkerblue;
+	}
+
+    // <-----BUTTON-------
+
+	.button:hover {
+		background-position: right center; /* change the direction of the change here */
+	}
+
+	.button {
+		.button();
+	}
+
+	hr {
+	border-top: solid 1px @coralred;
+	margin: 3em 0;
+	}
+
+	header {
+	margin-bottom: 5px;
+	}
+
+
+
+    /* Container */
+	.container {
+		margin: 0 auto;
+		width: 100%;
+
+		@media @tablet {
+			.container {
+			width: 100%;
+			max-width: calc(100% - 30px);
+			}
+
+		}
+
+		@media @mobile {
+			.container {
+			max-width: 70%;
+			}
+		}
+	}
+
+
+/* List */
+
+ul {
+	list-style: disc;
+	padding-left: 1em;
+	
+	ul li {
+	padding-left: 0.5em;
+	}
+}
+
+ol {
+	list-style: decimal;
+	padding-left: 1.25em;
+	
+	ol li {
+	padding-left: 0.25em;
+	}
+}
+
+
+article {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 5px auto;
+	padding: 5px;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#work {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-around;
+
+
+	.skill {
+		align-content: center;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: stretch;
+		justify-content: space-around;
+
+	#work footer {
+		align-content: center;
+	}
+
+}
+
+/* portfolio folder and files here*/
+
+
+#portfoliofolder {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-around;
+}
+
+
+.box1 {
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	left: 2em;
+	top: 2em;
+	margin: -4em 0 4em -4em;
+	width: auto;
+}
+
+.file {
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+	background-color: @pastelpeach;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	left: 2em;
+	top: 2em;
+	margin: -4em 0 4em -4em;
+	width: 25%;
+}
+
+.file img {
+	border: none;
+	position: relative;
+	padding: 5px;
+	height: 40%;
+	width: auto;
+}
+
+
+/* Icons */
+
+.label {
+	display: inline-block;
+	align-content: center;
+	justify-content: space-evenly;
+
+}
+
+.icon {
+	vertical-align: middle;
+	border: none;
+	max-height: 50px;
+	max-width: 50px;	
+}
+
+
+/* Section/Article */
+section, article {
+	margin-bottom: 3em;
+	
+
+	section > :last-child,
+	article > :last-child,
+	section:last-child,
+	article:last-child {
+	margin-bottom: 0;
+	}
+}
+
+article {
+	margin-bottom: 0;
+}
+	#top {
+	padding: 10em 0 10em 0;
+	text-align: left;
+	}
+
+	#me img{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	}
+
+	.hero {
+		padding-top: 3.5em;
+		background-image: url("../img/mountain-night-purple.jpg");
+		background-size: cover;
+		background-position: bottom center;
+		background-color: @dutchwhite;
+	}
+
+	#top .image img {
+	border-radius: 50%;
+	}
+
+	#top h1 {
+	margin-top: 0.35em;
+	}
+
+	#top p {
+	font-size: 1.4em;
+	line-height: 1.75em;
+	}
+
+	#top p a {
+	color: inherit;
+	}
+}
+
+/* Social */
+ul.social {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-flow: row wrap;
+
+
+	li {
+		position: relative;
+		display: inline-block;
+		margin: 0.25em;
+		top: 0;
+		padding-left: 0;
+	
+
+		a {
+			display: block;
+			width: 48px;
+			height: 48px;
+			border-radius: 6px;
+			top: 0;
+			position: relative;
+		
+			::hover {
+				top: -5px;
+			}
+		}
+	}
+}
+
+/* Form */
+
+
+	label {
+	color: @coralred;
+	font-weight: 700;
+	display: block;
+	margin: 0 0 0.5em 0;
+	}
+
+	form input[type=text],
+	form input[type=email],
+	form input[type=password],
+	form select,
+	form textarea {
+	display: block;
+	border: 0;
+	padding: 0.75em;
+	font-size: 1em;
+	border-radius: 8px;
+	border: solid 1px @coralred;
+	background: @darkblue;
+	color: @dutchwhite;
+	box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
+	width: 80%;
+	}
+
+	form input[type=text]:focus,
+	form input[type=email]:focus,
+	form input[type=password]:focus,
+	form select:focus,
+	form textarea:focus {
+	background: @darkblue;
+	box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
+	}
+
+	form textarea {
+	height: 15em;
+	}
+
+	form .actions:last-child {
+	margin-bottom: 0;
+	}
+
+
+
+
+/* Input*/
+
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+	.button();
+	position: relative;
+	display: inline-block;
+	font-weight: 300;
+	outline: 0;
+	cursor: pointer;
+	text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+background-color: @coralred;
+color: @dutchwhite;
+}
+
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+background-color: @dutchwhite;
+top: 1px;
+}
