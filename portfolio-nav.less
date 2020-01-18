@@ -1,0 +1,80 @@
+/* Nav */
+
+	#nav {
+		background-color: @coralred;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 5;
+		cursor: default;
+		height: 70px;
+		font-family: 'Homemade Apple', cursive;
+		line-height: 3.5em;
+
+		@media @mobile {
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+			justify-content: space-around;
+			height: 25%;
+			
+		}
+
+	}
+
+		#nav ul {
+			margin-bottom: 0;
+			list-style: none;
+			padding-left: 0;
+
+			@media @mobile {
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				justify-content: space-around;
+				
+			}
+		}
+
+		#nav li {
+			display: inline-block;
+			padding-left: 0;
+		}
+
+		#nav a {
+			position: relative;
+			display: block;
+			text-decoration: none;
+			outline: 0;
+			font-weight: 400;
+			height: 2.5em;
+			line-height: 2.5em;
+			padding: 1rem;
+			color: white;
+		}
+
+			::hover {
+				color: #fff;
+				background: #383838;
+			}
+
+				// #nav a.active:before {
+				// 	content: '';
+				// 	display: block;
+				// 	position: absolute;
+				// 	bottom: -0.6em;
+				// 	left: 50%;
+				// 	margin-left: -0.75em;
+				// 	border-left: solid 0.75em transparent;
+				// 	border-right: solid 0.75em transparent;
+				// 	border-top: solid 0.6em #282828;
+				// }
+
+				#topLogo {
+					height:50px;
+					vertical-align: middle;
+					align-self: center;
+					border: 2px @pastelpeach
+				}

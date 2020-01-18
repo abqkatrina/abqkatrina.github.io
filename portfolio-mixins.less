@@ -1,0 +1,36 @@
+// Mixins Here
+.hover-button(@bg-c, @f-c) {
+  background-color: @bg-c;
+  color: @f-c;
+}
+
+.button() {
+  background-color: white;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+  color: @lighterblue;
+  width: 150px;
+  font-size: .8rem;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+}
+
+
+
+.section-mobile() {
+    @media @mobile {
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    }
+}
