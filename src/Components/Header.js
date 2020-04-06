@@ -2,17 +2,11 @@ import React from 'react';
 import logo from '../img/isolated-monochrome-white.svg';
 import '../css/App.css';
 
+const Header = () => {
+
 return(
     <div>
-        <nav>
-            <ul>
-                <li><a href="#top">Top</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><img src={logo} className="App-logo" alt="logo" /></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        
         {/* <!-- Home --> */}
         <article id="top" class="hero">
             <div class="container">
@@ -26,3 +20,5 @@ return(
         </article>
     </div>
 )
+}
+export default Header;
