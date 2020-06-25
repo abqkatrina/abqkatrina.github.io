@@ -1,16 +1,15 @@
 import React from 'react';
-import logo from '../img/profile.png';
 
 const Nav = () => {
 
     return(
-        <nav>
+        <nav id="nav" className="nav">
             <ul>
-                <li><a href="#top">Top</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><img src={logo} className="App-logo" alt="logo" /></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/skills">Skills</a></li>
+                <li><img src-="../img/isolated-monochrome-white.png" className="top-logo" alt="logo" /></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     )

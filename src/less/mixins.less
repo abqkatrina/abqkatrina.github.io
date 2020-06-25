@@ -1,8 +1,7 @@
 // Mixins Here
 
 .background-design() {
-  backgroud-color: white;
-  backgroundimage: linear-gradient(to bottom, rgba(252, 67, 0, 0.829) 0%, rgba(255, 98, 7, 0.979) 51%, rgb(197, 0, 0) 100%);
+  background-color: white;
   color: white;
 }
 
@@ -14,7 +13,7 @@
 .button() {
   background-color: white;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
-  color: @lighterblue;
+  color: gray;
   width: 150px;
   font-size: .8rem;
   text-transform: lowercase;
@@ -40,4 +39,9 @@
     align-self: center;
     justify-content: center;
     }
+}
+
+.component() {
+  margin-top: 20vh;
+  z-index: 4;
 }

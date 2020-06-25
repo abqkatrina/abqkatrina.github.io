@@ -39,3 +39,12 @@
   50%     {transform: rotate(0deg);  left: 25px; top: 20px;}
   100%    {transform: rotate(0deg);  left: 20px; top: 20px;}
 }
+
+
+.main {
+  background-color: linear-gradient(to bottom skyblue, purple);
+}
+
+.component {
+  background: none;
+}

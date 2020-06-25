@@ -1,27 +1,19 @@
 import React from 'react';
-import logo from './img/isolated-monochrome-white.svg';
-import './less/app.less';
+import './css/index.css';
 import Nav from './Components/Nav.js';
-import Header from './Components/Header.js';
-import Skills from './Components/Skills.js';
-import Contacts from './Components/Contacts.js';
-import Portfolio from './Components/Portfolio.js';
 import Footer from './Components/Footer.js';
+import Main from './Components/Main.js';
 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        
-          abqkatrina coming soon...
+    <section className="main">
+      <Nav />
       
-      </header>
-    </div>
+      <Main />
+      
+      <Footer />
+    </section>
   );
 }
 
