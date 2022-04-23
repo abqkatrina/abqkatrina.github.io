@@ -18,7 +18,7 @@ return(
                         <a href="/skills" class="button">see what I can do</a>
             </div>
         </article>
-    </div>
+
 )
 }
 export default Header;

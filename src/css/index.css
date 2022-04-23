@@ -199,6 +199,12 @@ hr {
   height: 50px;
   vertical-align: middle;
   align-self: center;
+  border: 2px #FFECD9;
+.top-logo {
+  height: 55px;
+  width: 35px;
+  vertical-align: middle;
+  align-self: center;
   border: white;
 }
 footer {
