@@ -1,13 +1,245 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  text-align: center;
+  font-family: 'Homemade Apple', cursive;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App-logo {
+  height: 30vmin;
+  align-self: center;
+  position: relative;
+  margin-bottom: 30px;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: logo-drift 5s linear infinite;
+  }
+}
+.App-header {
+  background: linear-gradient(to bottom, white 0%, #F8CA9D 51%, #FA6E4F 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: gray;
+}
+@keyframes logo-drift {
+  0% {
+    transform: rotate(0deg);
+    left: 20px;
+    top: 20px;
+  }
+  25% {
+    transform: rotate(5deg);
+    left: 20px;
+    top: 25px;
+  }
+  75% {
+    transform: rotate(-5deg);
+    left: 25px;
+    top: 25px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 25px;
+    top: 20px;
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 20px;
+    top: 20px;
+  }
+}
+body {
+  background: linear-gradient(to bottom, #FA9581 0%, purple 100%);
+  min-height: 100vh;
+}
+.component {
+  margin-top: 20vh;
+  z-index: 4;
+}
+html {
+  box-sizing: border-box;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: white;
+}
+main-container {
+  width: 85vw;
+  min-height: 80vh;
+  max-width: 1024px;
+  margin: 35px auto;
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); */
+}
+a {
+  color: purple;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+h1 {
+  font-size: 3em;
+  letter-spacing: -0.025em;
+  font-weight: 300;
+  color: #8BACBD;
+  font-family: 'Homemade Apple', cursive;
+}
+h2 {
+  font-size: 2em;
+  letter-spacing: -0.015em;
+  color: #080F5B;
+  font-family: 'Homemade Apple', cursive;
+}
+h3 {
+  font-size: 1.5em;
+  letter-spacing: -0.015em;
+  color: #8BACBD;
+  font-family: 'Homemade Apple', cursive;
+}
+h4,
+h5,
+h6 {
+  font-family: 'Homemade Apple', cursive;
+  color: #FA9581;
+  margin: 0 0 0.75em 0;
+  font-weight: 400;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+}
+.button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+}
+.button {
+  background-color: white;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+  color: gray;
+  width: 150px;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+}
+hr {
+  border-top: solid 1px #FA9581;
+  margin: 3em 0;
+}
+#nav {
+  background-color: transparent;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  cursor: default;
+  height: 70px;
+  font-family: 'Homemade Apple', cursive;
+  line-height: 3.5em;
+}
+@media max-width: 500px {
+  #nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 25%;
+  }
+}
+#nav ul {
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+@media max-width: 500px {
+  #nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+#nav li {
+  display: inline-block;
+  padding-left: 0;
+}
+#nav a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  outline: 0;
+  font-weight: 400;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 1rem;
+  color: white;
+}
+::hover {
+  font-weight: 700;
+}
+.top-logo {
+  height: 50px;
+  vertical-align: middle;
+  align-self: center;
+  border: 2px #FFECD9;
+.top-logo {
+  height: 55px;
+  width: 35px;
+  vertical-align: middle;
+  align-self: center;
+  border: white;
+}
+footer {
+  color: #22283B;
+  background: transparent;
+  padding: 5px 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.25em;
+  line-height: 3.5em;
+  font-family: 'Homemade Apple', cursive;
+}
+@media max-width: 500px {
+  footer {
+    align-self: center;
+    width: 100%;
+  }
+}
+/* Copyright */
+#copyright {
+  color: #666;
+  font-size: 1em;
+  line-height: 1em;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#copyright li {
+  display: inline-block;
+  padding: 0 ;
+  margin: 2px;
 }
