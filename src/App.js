@@ -1,16 +1,19 @@
-import logo from './img/logo.svg';
-import './css/App.css';
+import React from 'react';
+import './css/index.css';
+import Nav from './Components/Nav.js';
+import Footer from './Components/Footer.js';
+import Main from './Components/Main.js';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          abqKatrina.dev is a work in progress. Check back soon for updates.
-        </p>
-      </header>
-    </div>
+    <section className="main">
+      <Nav />
+      
+      <Main />
+      
+      <Footer />
+    </section>
   );
 }
 
